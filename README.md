@@ -1,9 +1,21 @@
 # Hello Spring
 
-Минимален Spring Boot проект, който отпечатва `hello` при стартиране.
+Spring Boot MVC проект с контролер, който връща `view` (`Thymeleaf`).
 
-## Стартиране
+## Локално стартиране
 
 ```bash
 mvn spring-boot:run
 ```
+
+След стартиране отвори:
+
+`http://localhost:8080`
+
+## Railway
+
+Проектът е подготвен за Railway с:
+
+- `spring-boot-starter-web` и `spring-boot-starter-thymeleaf`
+- MVC контролер на `/`
+- `server.port=${PORT:8080}` в `application.properties`
